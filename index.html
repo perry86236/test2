@@ -1,8 +1,6 @@
 
-
-{%- endblock metas %}
 <!--Add-->
-{% block scripts %}
+
 {{super()}}
   <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
   <script>
@@ -19,16 +17,16 @@
     liff.init(function (data) {});
     });
  </script>
-{% endblock %}
+
 <!--End Add-->
 {% block title %}Paint Sample{% endblock %}
 <!--Add-->
-{% block content %}
+
 <div class="container">
   <canvas id="canvas"></canvas>
   <button id="btn" type="button" class="btn btn-primary btn-block">Share</button>
 </div>
-{% endblock %}
+
 <!--End Add-->
 
  <!-- Add -->
