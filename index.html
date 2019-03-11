@@ -1,14 +1,7 @@
-{% extends "bootstrap/base.html" %}
-{%- block metas %}
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-{%- endblock metas %}
-{% block title %}Paint Sample{% endblock %}
-{% block content %}
-{% endblock %}
-{%- endblock metas %}
+
 <!--Add-->
-{% block scripts %}
-{{super()}}
   <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
   <script>
     const canvas = document.querySelector('#canvas');
@@ -21,16 +14,15 @@
     signaturePad.clear();
     });
  </script>
-{% endblock %}
 <!--End Add-->
-{% block title %}Paint Sample{% endblock %}
+
 <!--Add-->
-{% block content %}
+
 <div class="container">
   <canvas id="canvas"></canvas>
   <button id="btn" type="button" class="btn btn-primary btn-block">Share</button>
 </div>
-{% endblock %}
+
 <!--End Add-->
 <script>
     $(window).on('load', function(){
